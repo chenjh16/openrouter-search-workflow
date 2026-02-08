@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.alfred.openrouter</string>
+	<key>category</key>
+	<string>Internet</string>
+	<key>connections</key>
+	<dict>
+		<key>3EB38437-4BE2-42DF-8EF0-768608E09D58</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E8A3B2C1-1234-5678-9ABC-DEF012345678</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>54260B27-78A9-4483-8B27-509BF0D7FC39</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5B7C834B-C9EC-4D65-9CE7-DB17EA71B16C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A1B2C3D4-E5F6-7890-1234-567890ABCDEF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B2C3D4E5-F601-2345-6789-0123456789AB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B2C3D4E5-F601-2345-6789-0123456789AB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C3D4E5F6-0123-4567-8901-23456789ABCD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C1E2F3A4-5678-9ABC-DEF0-123456789ABC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>54260B27-78A9-4483-8B27-509BF0D7FC39</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E8A3B2C1-1234-5678-9ABC-DEF012345678</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F9B4C3D2-2345-6789-ABCD-EF0123456789</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F9B4C3D2-2345-6789-ABCD-EF0123456789</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D4E5F6A7-1234-5678-9ABC-DEF012345678</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>chenjh16</string>
+	<key>description</key>
+	<string>Search and inspect AI models on OpenRouter</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>OpenRouter Model Search</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/bin/python3 main.py "--action {query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F9B4C3D2-2345-6789-ABCD-EF0123456789</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>-1</integer>
+				<key>hotmod</key>
+				<integer>524288</integer>
+				<key>hotstring</key>
+				<string>double tap</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>3EB38437-4BE2-42DF-8EF0-768608E09D58</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>or</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Searching OpenRouter...</string>
+				<key>script</key>
+				<string>/usr/bin/python3 main.py "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Search OpenRouter AI models</string>
+				<key>title</key>
+				<string>Search OpenRouter Models</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>E8A3B2C1-1234-5678-9ABC-DEF012345678</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>orc</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Clearing cache...</string>
+				<key>script</key>
+				<string>/usr/bin/python3 main.py "clear"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Clear all cached data</string>
+				<key>title</key>
+				<string>Clear OpenRouter Cache</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>C1E2F3A4-5678-9ABC-DEF0-123456789ABC</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>OpenRouter Cache</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>5B7C834B-C9EC-4D65-9CE7-DB17EA71B16C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/bin/python3 main.py --clear "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>54260B27-78A9-4483-8B27-509BF0D7FC39</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>OpenRouter Workflow</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>C3D4E5F6-0123-4567-8901-23456789ABCD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/bin/python3 main.py --refresh</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B2C3D4E5-F601-2345-6789-0123456789AB</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>orf</string>
+				<key>subtext</key>
+				<string>Update models, icons, and endpoints</string>
+				<key>text</key>
+				<string>OpenRouter Full Refresh</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>A1B2C3D4-E5F6-7890-1234-567890ABCDEF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Copied to Clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>D4E5F6A7-1234-5678-9ABC-DEF012345678</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>## Functionality
+
+An Alfred Workflow for searching and inspecting AI models on [OpenRouter](https://openrouter.ai).
+
+## Usage:
+- Type `or &lt;query&gt;` to search models
+- &lt;kbd&gt;⇥&lt;/kbd&gt; on a result to see provider details
+- &lt;kbd&gt;⏎&lt;/kbd&gt; to open the model page on OpenRouter
+- &lt;kbd&gt;⌥⏎&lt;/kbd&gt;: Copy model ID (Copy Model ID in search; Copy URL on Header/HuggingFace/ModelScope items; Copy Provider Tag on provider items)
+- &lt;kbd&gt;⌃⏎&lt;/kbd&gt;: Copy curl test command (General command on search/header; Provider-specific on provider items)
+- Type `orc` to clear cache
+- Type `orf` to force refresh models
+
+## Configuration:
+Set `OPENROUTER_API_KEY` (from `openrouter.ai/keys`) to enable latency and throughput data for providers.
+
+---
+
+## 功能
+
+一个用于搜索和查看 [OpenRouter](https://openrouter.ai/) 上 AI 模型的 Alfred Workflow。
+
+## Usage:
+- 输入 `or &lt;query&gt;` 搜索模型
+- &lt;kbd&gt;⇥&lt;/kbd&gt; 查看供应商详情
+- &lt;kbd&gt;⏎&lt;/kbd&gt; 打开 OpenRouter 模型页面
+- &lt;kbd&gt;⌥⏎&lt;/kbd&gt;: 复制模型 ID（列表页为复制模型 ID；详情页 顶部/HuggingFace/ModelScope 条目上为复制链接；供应商条目上为复制 Provider Tag）
+- &lt;kbd&gt;⌃⏎&lt;/kbd&gt;: 复制 curl 测试命令（列表页/详情页顶部复制通用命令；供应商条目复制指定供应商命令）
+- 输入 `orc` 清除所有缓存
+- 输入 `orf` 强制刷新模型
+
+## 配置:
+设置 `OPENROUTER_API_KEY` (来自 `openrouter.ai/keys`) 以启用供应商的延迟和吞吐量数据。</string>
+	<key>uidata</key>
+	<dict>
+		<key>3EB38437-4BE2-42DF-8EF0-768608E09D58</key>
+		<dict>
+			<key>xpos</key>
+			<real>45</real>
+			<key>ypos</key>
+			<real>100</real>
+		</dict>
+		<key>54260B27-78A9-4483-8B27-509BF0D7FC39</key>
+		<dict>
+			<key>xpos</key>
+			<real>445</real>
+			<key>ypos</key>
+			<real>220</real>
+		</dict>
+		<key>5B7C834B-C9EC-4D65-9CE7-DB17EA71B16C</key>
+		<dict>
+			<key>xpos</key>
+			<real>655</real>
+			<key>ypos</key>
+			<real>220</real>
+		</dict>
+		<key>A1B2C3D4-E5F6-7890-1234-567890ABCDEF</key>
+		<dict>
+			<key>xpos</key>
+			<real>235</real>
+			<key>ypos</key>
+			<real>340</real>
+		</dict>
+		<key>B2C3D4E5-F601-2345-6789-0123456789AB</key>
+		<dict>
+			<key>xpos</key>
+			<real>445</real>
+			<key>ypos</key>
+			<real>340</real>
+		</dict>
+		<key>C1E2F3A4-5678-9ABC-DEF0-123456789ABC</key>
+		<dict>
+			<key>xpos</key>
+			<real>235</real>
+			<key>ypos</key>
+			<real>220</real>
+		</dict>
+		<key>C3D4E5F6-0123-4567-8901-23456789ABCD</key>
+		<dict>
+			<key>xpos</key>
+			<real>655</real>
+			<key>ypos</key>
+			<real>340</real>
+		</dict>
+		<key>E8A3B2C1-1234-5678-9ABC-DEF012345678</key>
+		<dict>
+			<key>xpos</key>
+			<real>235</real>
+			<key>ypos</key>
+			<real>100</real>
+		</dict>
+		<key>F9B4C3D2-2345-6789-ABCD-EF0123456789</key>
+		<dict>
+			<key>xpos</key>
+			<real>445</real>
+			<key>ypos</key>
+			<real>100</real>
+		</dict>
+		<key>D4E5F6A7-1234-5678-9ABC-DEF012345678</key>
+		<dict>
+			<key>xpos</key>
+			<real>655</real>
+			<key>ypos</key>
+			<real>100</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<false/>
+				<key>required</key>
+				<false/>
+				<key>text</key>
+				<string>Debug Mode</string>
+			</dict>
+			<key>description</key>
+			<string>Enable detailed logging and debug output.</string>
+			<key>label</key>
+			<string>Debug Mode</string>
+			<key>type</key>
+			<string>checkbox</string>
+			<key>variable</key>
+			<string>ALFRED_WORKFLOW_DEBUG</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>1440</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Cache duration for models list in minutes (default: 1440 / 24h). Use -1 for infinity.</string>
+			<key>label</key>
+			<string>Models TTL (min)</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>MODELS_TTL</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>30</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Cache duration for model endpoints in minutes (default: 30 / 30m). Use -1 for infinity.</string>
+			<key>label</key>
+			<string>Endpoints TTL (min)</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>ENDPOINTS_TTL</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>43200</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Cache duration for icon metadata in minutes (default: 43200 / 30d). Use -1 for infinity.</string>
+			<key>label</key>
+			<string>Icons TTL (min)</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>ICONS_TTL</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string>sk-or-v1-......</string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Required to see latency and throughput data. Get it from openrouter.ai/keys</string>
+			<key>label</key>
+			<string>OpenRouter API Key</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>OPENROUTER_API_KEY</string>
+		</dict>
+	</array>
+	<key>variables</key>
+	<dict/>
+	<key>variablesdontexport</key>
+	<array>
+		<string>OPENROUTER_API_KEY</string>
+	</array>
+	<key>version</key>
+	<string>0.1.0</string><!-- version -->
+	<key>webaddress</key>
+	<string>https://openrouter.ai</string>
+</dict>
+</plist>

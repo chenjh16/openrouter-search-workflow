@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alfred-openrouter"
+version = "0.1.0"
+description = "Alfred Workflow for searching and inspecting AI models on OpenRouter"
+authors = [
+  { name="chenjh16" },
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pylint",
+    "mypy",
+    "ruff",
+    "types-requests",
+]
+
+[tool.ruff]
+line-length = 120
+
+[tool.setuptools]
+py-modules = ["main", "download_icon"]
+packages = ["workflow"]
+
+[tool.pylint.messages_control]
+disable = [
+    "R0903", # too-few-public-methods
+    "W0718", # broad-exception-caught (allowed in top-level handlers)
+    "W1203", # logging-fstring-interpolation (f-strings are preferred in this project)
+]
+
+[tool.pylint.format]
+max-line-length = 120

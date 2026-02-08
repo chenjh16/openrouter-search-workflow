@@ -1,0 +1,25 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: macos-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Build Alfred Workflow
+        run: |
+          make build
+          mv OpenRouter.alfredworkflow OpenRouter-${{ github.ref_name }}.alfredworkflow
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: OpenRouter-${{ github.ref_name }}.alfredworkflow
+          generate_release_notes: false
