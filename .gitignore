@@ -1,0 +1,51 @@
+# Artifacts
+OpenRouter.alfredworkflow
+
+# Special files
+CLAUDE.md
+.temp/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+*.manifest
+*.spec
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.idea/
+.agent/
+.vscode/
+.claude/
+.antigravity/
+.ruff_cache/
+*.swp
+*.swo
+*~
+
+# Local configuration
+.env
+.env.local
+*.local
+
+# Logs
+*.log

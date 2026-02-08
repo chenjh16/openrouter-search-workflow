@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alfred-openrouter"
+version = "0.1.0"
+description = "Alfred Workflow for searching and inspecting AI models on OpenRouter"
+authors = [
+  { name="chenjh16" },
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pylint",
+    "mypy",
+    "pycodestyle",
+    "types-requests",
+]
+
+[tool.setuptools]
+py-modules = ["main", "download_icon"]

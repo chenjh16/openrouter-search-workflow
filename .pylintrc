@@ -1,0 +1,10 @@
+[MESSAGES CONTROL]
+disable=
+    R0903, # too-few-public-methods
+    R0912, # too-many-branches
+    R0914, # too-many-locals
+    W0718, # broad-exception-caught (allowed in top-level handlers)
+    W1203, # logging-fstring-interpolation (f-strings are preferred in this project)
+
+[FORMAT]
+max-line-length=120
